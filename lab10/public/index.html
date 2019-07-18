@@ -7,16 +7,8 @@
 <link rel = "stylesheet" href = "./lab03.css">
 
 <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
-<script>
+<script src="./script.env">
   // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyDJtuTYGIV0fDGnJ2TTn-msTPqUgzlQfrc",
-    authDomain: "lab-10-1ef3d.firebaseapp.com",
-    databaseURL: "https://lab-10-1ef3d.firebaseio.com",
-    projectId: "lab-10-1ef3d",
-    storageBucket: "lab-10-1ef3d.appspot.com",
-    messagingSenderId: "58201680005"
-  };
   firebase.initializeApp(config);
 </script>
 <script type = "text/javascript" src = "./lab03.js"></script>
@@ -31,7 +23,7 @@
 			<option value = "LightPink">Pink</option>
 			<option value = "LightBlue">Blue</option>
 		</select>
-		<label for "note_text">Text:</label><input type = "text" id = "note_text">
+		<label for = "note_text">Text:</label><input type = "text" id = "note_text">
 		<input type = "button" id = "add_button" value = "Add Sticky Note to Self">
 		<input type = "button" id = "clear_button" value = "Clear all Notes">
 	</form>
